@@ -2,40 +2,109 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  :root {
-    --primary: #ffffff;
-    --secondary: #f4f4f4;
-    --third: #262626;
-    --black: #161616;
-  }
-
-  .dark {
-    --primary: #161616;
-    --secondary: #262626;
-    --third: #f4f4f4;
-    --black: #ffffff;
-  }
-}
-
-@layer base {
-  html {
-    @apply font-medium;
-    font-family: Neue Montreal;
-  }
-
-  body {
-    @apply overflow-x-hidden;
-  }
-
-  .card-size {
-    @apply h-[308px] rounded-xl sm:h-[496px];
-  }
-  .card-mobile-text {
-    @apply text-2xl text-black md:hidden
-  }
-}
 
 ::-webkit-scrollbar {
-  width: 0px;
+  width:3px;
 }
+
+::-webkit-scrollbar-track {
+  background: trasparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background:#262424;
+  border:8px
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background:#262424;
+}
+
+
+.section-x {
+  @apply px-6 lg:px-24 2xl:px-36 mx-auto;
+}
+
+.section-y {
+  @apply pt-14 2xl:pt-28 pb-12 2xl:pb-24;
+}
+
+.section {
+  @apply section-x section-y;
+}
+
+
+@layer base {
+  :root {
+    --primary: #262626;
+    --secondary: #161616;
+    --third: #262626;
+    --black: #161616;
+    --font-min: 16px;
+    --font-preferred: .8vw;
+    --font-max: 24px;
+    --title-min: 48px;
+    --title-preferred: 15vw;
+    --title-max: 20vw;
+  }
+}
+
+@layer base {
+  body{
+    @apply overflow-x-hidden overflow-y-hidden  hide-scrolling h-screen text-responsive py-2;
+  }
+  h1 {
+    @apply text-4xl;
+    @apply font-bold;
+  }
+  h2 {
+    @apply text-3xl;
+    @apply font-bold;
+  }
+  h3 {
+    @apply text-2xl;
+    @apply font-bold;
+  }
+  h4 {
+    @apply text-xl;
+    @apply font-semibold;
+  }
+  h5 {
+    @apply text-lg;
+    @apply font-semibold;
+  }
+  h6 {
+    @apply text-sm;
+    @apply font-semibold;
+  }
+}
+
+
+@layer utilities {
+  .hide-scrolling {
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .hide-scrolling::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+
+  .text-contrast {
+    color: #fff;
+    mix-blend-mode: difference;
+  }
+
+  .text-title-responsive {
+    font-size: clamp(var(--title-min), var(--title-preferred), var(--title-max));
+    line-height: clamp(--lineheight-multipler*var(--title-min), --lineheight-multipler*var(--title-preferred), --lineheight-multipler*var(--title-max));
+  }
+
+  .text-responsive {
+    font-size: clamp(var(--font-min), var(--font-preferred), var(--font-max));
+    line-height: clamp(--lineheight-multipler*var(--font-min), --lineheight-multipler*var(--font-preferred), --lineheight-multipler*var(--font-max));
+  }
+}
+
