@@ -2,8 +2,8 @@ import { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "nt3",
-    short_name: "nt3",
+    name: "nextjs-spotify-soundtracks",
+    short_name: "nextjs-spotify-soundtracks",
     display: "standalone",
     background_color: "#FFFFFF",
     theme_color: "#FFFFFF",
