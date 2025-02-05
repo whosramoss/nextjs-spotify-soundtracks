@@ -1,10 +1,10 @@
-<a href="https://github.com/whosramoss/nt3">
-  <img alt="NT3" src="./public/thumbnail.png" />
-  <h1 align="center">NT3</h1>
+<a href="https://github.com/whosramoss/nextjs-spotify-soundtracks">
+  <img alt="nextjs-spotify-soundtracks" src="./public/thumbnail.png" />
+  <h1 align="center">Nextjs Spotify Soundtracks</h1>
 </a>
 
 <p align="center">
-  This template provides a starting point for building Next.js apps with Tailwind CSS, TypeScript and Three.js.
+  A curated collection of Spotify soundtracks
 </p>
 
 <div align="center">
@@ -17,7 +17,6 @@
   <img src="https://img.shields.io/badge/Prettier-242424?style=for-the-badge&logo=prettier" alt="Prettier">
   <img src="https://img.shields.io/badge/eslint-0170FE?style=for-the-badge&logo=eslint" alt="eslint">
   <img src="https://img.shields.io/badge/zod-242424?style=for-the-badge&logo=zod" alt="zod">
-   <img src="https://img.shields.io/badge/three-242424?style=for-the-badge&logo=three.js" alt="three">
 </div>
 <br/>
 
@@ -29,10 +28,10 @@
 
 ```bash
   # Clone the project
-  git clone https://github.com/whosramoss/nt3/
+  git clone https://github.com/whosramoss/nextjs-spotify-soundtracks/
 
   # Go to the project directory
-  cd nt3
+  cd nextjs-spotify-soundtracks
 
   # Install dependencies
   npm install
@@ -97,7 +96,7 @@ src/
 - [useApiFetchFromSwr](./src/hooks/useApiFetchFromSwr.ts) (Using [SWR](https://www.npmjs.com/package/swr))
 
 ## Contributing 
-If you want to contribute to `nt3`, please make sure to review the [contribution guidelines](https://github.com/whosramoss/nt3/blob/master/CONTRIBUTING.md). This project makes use of [GitHub issues](https://github.com/whosramoss/nt3/issues) for
+If you want to contribute to `nextjs-spotify-soundtracks`, please make sure to review the [contribution guidelines](https://github.com/whosramoss/nextjs-spotify-soundtracks/blob/master/CONTRIBUTING.md). This project makes use of [GitHub issues](https://github.com/whosramoss/nextjs-spotify-soundtracks/issues) for
 tracking requests and bugs.
 
 ## License 
