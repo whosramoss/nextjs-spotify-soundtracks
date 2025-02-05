@@ -1,14 +1,10 @@
-import { ExampleProvider } from "@providers/ExampleProvider";
 import { CustomQueryProvider } from "@providers/QueryProvider";
-import { ThemeProvider } from "@providers/ThemeProvider";
-import { CommonsProps } from "@utils/utils";
+import { ICommons } from "@utils/utils";
 
-export default async function AppProvider({ children }: CommonsProps) {
+export default async function AppProvider({ children }: ICommons) {
   return (
-    <ThemeProvider attribute="class" defaultTheme="light">
-      <CustomQueryProvider>
-        <ExampleProvider>{children}</ExampleProvider>
-      </CustomQueryProvider>
-    </ThemeProvider>
+    <CustomQueryProvider>
+      {children}
+    </CustomQueryProvider>
   );
 }
