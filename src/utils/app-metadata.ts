@@ -9,9 +9,9 @@ export default class AppMetadata {
 
   constructor(isLocalTest: boolean) {
     this.isLocalTest = isLocalTest;
-    this.META_URL = "https://github.com/whosramoss/nt3/";
-    this.META_NAME = "NT3 - NextJs Boilerplate";
-    this.META_DESCRIPTION = "Next.js Boilerplate to creative projects";
+    this.META_URL = "https://github.com/whosramoss/nextjs-spotify-soundtracks/";
+    this.META_NAME = "Nextjs Spotify Soundtracks";
+    this.META_DESCRIPTION = "A curated collection of Spotify soundtracks";
     this.META_SITENAME = this.META_URL;
     this.META_THUMBNAIL = `${this.META_URL}thumbnail.png`;
     this.META_BASE = isLocalTest ? "http://localhost:3000/" : this.META_URL;
